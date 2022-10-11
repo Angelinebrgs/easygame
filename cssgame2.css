@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#game {
+    width: 640px;
+    height: 347px;
+    border: 1px solid black;
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/19/12/10/background-5931012_960_720.jpg);
+    margin: auto;
+}
+#cloud {
+    width: 80px;
+    height: 30px;
+    left: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -20px;
+    animation: cloud 3s infinite linear;
+}
+@keyframes cloud {
+    0% {
+        left: 1200px;
+    }
+    100% {
+        left: -1200px;
+    }
+}
+#cloud2 {
+    width: 80px;
+    height: 30px;
+    left: 10px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: -40px;
+    animation: cloud2 2s infinite linear;
+}
+@keyframes cloud2 {
+    0% {
+        left: 1200px;
+    }
+    100% {
+        left: -1200px;
+    }
+}
+#character {
+    width: 20px;
+    height: 50px;
+    background-color: rgb(78, 228, 33);
+    position: relative;
+    top: 297px;
+}
+.animate {
+    animation: jump 300ms;
+}
+@keyframes jump {
+    0% {
+        top: 180px;
+    }
+    30% {
+        top: 150x;
+    }
+    70% {
+        top: 150px;
+    }
+    100% {
+        top: 180px;
+    }
+}
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    top: 277px;
+    left: 1200px;
+    animation: block 4s infinite linear;
+}
+@keyframes block {
+    0% {
+        left: 1200px;
+    }
+    100% {
+        left: -1250px;
+    }
+}
+p {
+    text-align: center;
+}
+audio{
+    justify-content: left;
+}
